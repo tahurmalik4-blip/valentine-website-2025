@@ -22,11 +22,14 @@
         
         <!-- Music Player -->
         <div id="musicControls" class="music-controls">
-            <button id="musicToggle" class="music-btn">🎵 Play Music</button>
-            <audio id="bgMusic" loop>
-                <source id="musicSource" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+            <button id="musicToggle" class="music-btn">🎵 Play <script>
+  const bgMusic = document.getElementById("bg-music");
+
+  document.addEventListener("click", () => {
+    bgMusic.volume = 0.25;   // very soft background
+    bgMusic.play();
+  }, { once: true });
+</script>  
         </div>
 
         <!-- First Question -->
