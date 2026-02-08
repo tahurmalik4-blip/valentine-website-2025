@@ -76,8 +76,8 @@ const CONFIG = {
     // Background Music (Optional)
     // Add your own music URL after getting proper licenses
    music: {
-  enabled: true,
-  autoplay: false,
+  enabled: false,
+  autoplay: true,
   musicUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
   startText: "🎵 Play Music",
   stopText: "🔇 Stop Music",
